@@ -1,18 +1,18 @@
 // import React, { Component, useState } from 'react'
 // import Class from './components/trenlop/Class'
 // import A from './components/trenlop/A'
-import Bai1 from './components/baitap/Bai1'
-import Bai2 from './components/baitap/Bai2'
-import Bai3 from './components/baitap/Bai3'
-import Bai4 from './components/baitap/Bai4'
-import Bai5 from './components/baitap/Bai5'
-import Bai6 from './components/baitap/bài 6/Bai6'
-import Bai7 from './components/baitap/Bai7'
-import Bai8 from './components/baitap/Bai8'
-import Bai9 from './components/baitap/Bai9'
-import Bai10 from './components/baitap/Bai10'
-import Bai11 from './components/baitap/Bai11'
-import Bai12 from './components/baitap/Bai12'
+// import Bai1 from './components/baitap/Bai1'
+// import Bai2 from './components/baitap/Bai2'
+// import Bai3 from './components/baitap/Bai3'
+// import Bai4 from './components/baitap/Bai4'
+// import Bai5 from './components/baitap/Bai5'
+// import Bai6 from './components/baitap/bài 6/Bai6'
+// import Bai7 from './components/baitap/Bai7'
+// import Bai8 from './components/baitap/Bai8'
+// import Bai9 from './components/baitap/Bai9'
+// import Bai10 from './components/baitap/Bai10'
+import Bai11 from './components/baitap/bai11/Bai11'
+// import Bai12 from './components/baitap/Bai12'
 
 // export default function App(){
 //   const [active,setActive]=useState<boolean>(true);
@@ -81,33 +81,37 @@ export default class App extends Component<Props, State> {
   }
   render() {
     return (
-      <div>
-        <h1>Bài 1</h1>
-        <Bai1></Bai1>
-        <h1>Bài 2</h1>
-        <Bai2></Bai2>
-        <h1>Bài 3</h1>
-        <Bai3></Bai3>
-        <h1>Bài 4</h1>
-        <Bai4></Bai4>
-        <h1>Bài 5</h1>
-        <Bai5 message={this.state.message} />
-        <button onClick={this.updateMessage}>Thay đổi thông điệp</button>
-        <h1>Bài 6</h1>
-        <Bai6></Bai6>
-        <h1>Bài 7</h1>
-        <Bai7></Bai7>
-        <h1>Bài 8</h1>
-        <Bai8></Bai8>
-        <h1>Bài 9</h1>
-        <Bai9></Bai9>
-        <h1>Bài 10</h1>
-        <Bai10></Bai10>
-        <h1>Bài 11</h1>
-        <Bai11></Bai11>
-        <h1>Bài 12</h1>
-        <Bai12></Bai12>
-      </div>
+      // <div>
+      //   <h1>Bài 1</h1>
+      //   <Bai1></Bai1>
+      //   <h1>Bài 2</h1>
+      //   <Bai2></Bai2>
+      //   <h1>Bài 3</h1>
+      //   <Bai3></Bai3>
+      //   <h1>Bài 4</h1>
+      //   <Bai4></Bai4>
+      //   <h1>Bài 5</h1>
+      //   <Bai5 message={this.state.message} />
+      //   <button onClick={this.updateMessage}>Thay đổi thông điệp</button>
+      //   <h1>Bài 6</h1>
+      //   <Bai6></Bai6>
+      //   <h1>Bài 7</h1>
+      //   <Bai7></Bai7>
+      //   <h1>Bài 8</h1>
+      //   <Bai8></Bai8>
+      //   <h1>Bài 9</h1>
+      //   <Bai9></Bai9>
+      //   <h1>Bài 10</h1>
+      //   <Bai10></Bai10>
+      //   <h1>Bài 11</h1>
+      //   <Bai11></Bai11>
+      //   <h1>Bài 12</h1>
+      //   <Bai12></Bai12>
+      // </div>
+
+      <>
+      <Bai11/>
+      </>
     )
   }
 }

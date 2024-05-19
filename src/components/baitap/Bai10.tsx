@@ -1,11 +1,33 @@
 import React, { Component } from 'react'
-
-export default class Bai10 extends Component {
+interface Prop{}
+interface State{
+    count:number;
+    timerId:number
+}
+export default class Bai10 extends Component <Prop,State>{
+    constructor(props: Prop){
+        super(props);
+        this.state ={
+            count:0,
+            timerId:0
+        }
+    }
+    componentDidMount(): void {
+      const timerId = setInterval(() => {
+        this.setState({
+          count: this.state.count === 9 ? 0 : this.state.count + 1,
+        });
+        },1000);
+        this.setState({
+          timerId: timerId
+        })
+    }
+    componentWillUnmount(): void {
+        clearInterval(this.state.timerId);
+    }
   render() {
     return (
-      <div>
-        
-      </div>
+      <div>Count: {this.state.count}</div>
     )
   }
 }
